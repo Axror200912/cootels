@@ -1,0 +1,67 @@
+.room {
+    &__info {
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+
+        h1 {
+            @include fontForTitle(4.8rem, 7.2rem)
+        }
+
+        p {
+            @include fontForP;
+            @include marginForP;
+            color: $secondary;
+        }
+
+        button {
+            @include btn;
+            @include fontForBtn;
+            @include paddingForBtn;
+        }
+    }
+
+    &__big-piece {
+        @include flex;
+        gap: 2.4rem;
+        margin-top: 8.8rem;
+    }
+
+    &__piece-1 {
+        h3 {
+            @include fontForTitle(2.4rem, 3.6rem)
+        }
+
+        p {
+            @include fontForP;
+            @include marginForP;
+            color: $secondary;
+        }
+    }
+
+    &__piece-2 {
+        h3 {
+            @include fontForTitle(2.4rem, 3.6rem)
+        }
+
+        p {
+            @include fontForP;
+            @include marginForP;
+            color: $secondary;
+        }
+    }
+
+    &__piece-3 {
+        h3 {
+            @include fontForTitle(2.4rem, 3.6rem)
+        }
+
+        p {
+            @include fontForP;
+            @include marginForP;
+            color: $secondary;
+        }
+    }
+
+
+}

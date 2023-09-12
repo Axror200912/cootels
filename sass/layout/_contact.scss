@@ -1,0 +1,18 @@
+.contact{
+    @include flex2;
+    h1 {
+        @include fontForTitle(4.8rem, 7.2rem)
+    }
+    h1 ~ img{
+        @include marginForP;    
+    }
+    p{
+            @include fontForP;
+            @include marginForP;
+            color: $secondary;
+    }
+    h5{
+        @include fontForP;
+        @include marginForP;
+    }
+}

@@ -1,0 +1,27 @@
+.footer{
+    background: $footer_bg;
+    color: $third_color ;
+    padding-top: 12rem;
+    li{
+        a{
+
+            @include liSize;
+        }
+    }
+    ul:nth-child(1){
+        padding-right: $size_3;
+    }
+    ul:nth-child(2){
+        padding-right: $size_2;
+    }
+    ul:nth-child(3){
+        padding-right: $size_2;
+    }
+    .social{
+        display: flex;
+        gap:$size_1;
+    }
+    h2{
+        margin-bottom:$size_1;
+    }
+}

@@ -1,0 +1,38 @@
+.cabin {
+    @include paddingForSection;
+    @include flex;
+    gap: 12rem;
+
+    &__info {
+        width: 55%;
+
+        h1 {
+            @include fontForTitle(4.8rem, 7.2rem)
+        }
+
+        p {
+            @include fontForP;
+            @include marginForP;
+            color: $secondary;
+        }
+
+        button {
+            @include btn;
+            @include fontForBtn;
+            @include paddingForBtn;
+        }
+    }
+
+    &__img {
+        width: 45%;
+
+        img {
+            width: 100%;
+
+            &:nth-child(2) {
+                padding-top: 8.7rem;
+            }
+        }
+
+    }
+}
